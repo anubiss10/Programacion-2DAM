@@ -1,11 +1,9 @@
 -- SQLBook: Code
--- Crear la base de datos
-CREATE DATABASE Seguros;
-USE Seguros;
+
 
 -- Crear la tabla clientes
 CREATE TABLE clientes (
-    idCliente INT PRIMARY KEY AUTO_INCREMENT,
+    id_Cliente INT PRIMARY KEY AUTO_INCREMENT,
     nombre VARCHAR(30),
     apellidos VARCHAR(30),
     telefono VARCHAR(30),
