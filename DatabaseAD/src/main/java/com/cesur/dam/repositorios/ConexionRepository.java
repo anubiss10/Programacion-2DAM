@@ -1,5 +1,9 @@
 package com.cesur.dam.repositorios;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Repository;
 
@@ -17,14 +21,20 @@ public class ConexionRepository {
 
     public String confirmarConexion() {
         try {
-            System.out.println("Conectado a la base de datos...");
+            System.out.println("Conectando a la base de datos...");
 
-            // Usa las variables databaseUrl, databaseUsername y databasePassword en tu código
-
+            try (Connection connection = DriverManager.getConnection(databaseUrl, databaseUsername, databasePassword)) {
+                System.out.println("Conexión exitosa a la base de datos.");
+                return "Conexión exitosa";
+            } catch (SQLException e) {
+                System.err.println("Error al conectar a la base de datos.");
+                e.printStackTrace();
+                return "Error al conectar a la base de datos.";
+            }
         } catch (Exception e) {
-            System.err.println("Error al conectar a la base de datos.");
+            System.err.println("Error general.");
             e.printStackTrace();
+            return "Error general.";
         }
-		return "Conectado";
     }
 }
