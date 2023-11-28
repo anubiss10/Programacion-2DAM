@@ -1,3 +1,4 @@
+-- SQLBook: Code
 -- Crear la base de datos
 CREATE DATABASE Seguros;
 USE Seguros;
@@ -42,3 +43,4 @@ CREATE TABLE segurosAseguradora (
     FOREIGN KEY (idAseguradora) REFERENCES aseguradoras(idAseguradora),
     FOREIGN KEY (idSeguro) REFERENCES seguros(idSeguro)
 );
+
