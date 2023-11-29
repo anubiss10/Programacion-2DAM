@@ -263,7 +263,7 @@ body {
 	color: #fff;
 	background-color: #121212;
 	padding:4rem;
-
+	margin-top: 5px;
 	display: flex;
 	flex-direction: column;
 	border-radius: 8px;
@@ -381,7 +381,27 @@ body {
     transform: translate(50%, -50%);
     cursor: pointer;
 }
-
+.container footer .controles{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding-bottom: .5em;
+}
+.container footer .controles img{
+    margin: 0 .5em;
+}
+.container footer .progreso{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container footer .progreso .barra_progreso{
+    width: 40%;
+    height: 5px;
+    background-color: #282828;
+    border-radius: var(--radius);
+    margin: 0 1em;
+}
 .btn-play i{
     font-size: 2.3rem;
     padding-left: .5rem;
