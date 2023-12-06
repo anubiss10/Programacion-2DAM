@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ArrayList>
+  <item>
+    <idAseguradora>1</idAseguradora>
+    <nombre>Compañía Aseguradora</nombre>
+  </item>
+  <item>
+    <idAseguradora>2</idAseguradora>
+    <nombre>Otra Aseguradora</nombre>
+  </item>
+  <item>
+    <idAseguradora>3</idAseguradora>
+    <nombre>Aseguradora XYZ</nombre>
+  </item>
+</ArrayList>

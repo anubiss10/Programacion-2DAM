@@ -18,7 +18,7 @@ CREATE TABLE seguros (
 
 -- Crear la tabla aseguradoras
 CREATE TABLE aseguradoras (
-    idAseguradora INT PRIMARY KEY AUTO_INCREMENT,
+    id_aseguradora INT PRIMARY KEY AUTO_INCREMENT,
     cif VARCHAR(30),
     nombre VARCHAR(30),
     localizacion VARCHAR(30)

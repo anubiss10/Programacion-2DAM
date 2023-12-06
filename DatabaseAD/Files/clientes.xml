@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ArrayList>
+  <item>
+    <idCliente>1</idCliente>
+    <nombre>Juan</nombre>
+    <apellidos>Perez</apellidos>
+    <telefono>123456789</telefono>
+    <email>juan.perez@example.com</email>
+  </item>
+  <item>
+    <idCliente>2</idCliente>
+    <nombre>María</nombre>
+    <apellidos>Gomez</apellidos>
+    <telefono>987654321</telefono>
+    <email>maria.gomez@example.com</email>
+  </item>
+  <item>
+    <idCliente>3</idCliente>
+    <nombre>Carlos</nombre>
+    <apellidos>Rodriguez</apellidos>
+    <telefono>555123456</telefono>
+    <email>carlos.rodriguez@example.com</email>
+  </item>
+</ArrayList>

@@ -1,8 +1,12 @@
 package com.cesur.dam.servicios;
+import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
@@ -41,7 +45,23 @@ public class FileService {
         }
     }
     
- 
+  public List<String> listarArchivos() {
+        String directorioDeTrabajo = "DatabaseAD";
+        File directorio = new File(directorioDeTrabajo);
 
-    // Puedes añadir más métodos según tus necesidades, como borrarArchivo, obtenerArchivo, etc.
+        if (!directorio.exists() || !directorio.isDirectory()) {
+            throw new RuntimeException("El directorio no existe o no es válido: " + directorioDeTrabajo);
+        }
+
+        // Lista los archivos en el directorio
+        String[] archivos = directorio.list();
+
+        if (archivos == null || archivos.length == 0) {
+            // No hay archivos, devolver una lista vacía en lugar de lanzar una excepción
+            return new ArrayList<>();
+        }
+
+        return Arrays.asList(archivos);
+    }
+
 }
