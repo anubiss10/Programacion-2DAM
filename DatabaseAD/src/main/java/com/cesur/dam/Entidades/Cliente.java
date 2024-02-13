@@ -7,7 +7,6 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
-// Cliente.java
 @Entity
 @Table(name = "clientes")
 public class Cliente {

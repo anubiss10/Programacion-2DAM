@@ -11,14 +11,14 @@ import java.util.List;
 import com.cesur.dam.Entidades.Cliente;
 import com.cesur.dam.repositorios.ClienteRepository;
 
-@Service
-public class ClienteService {
-    private final ClienteRepository clienteRepository;
+    @Service
+    public class ClienteService {
+        private final ClienteRepository clienteRepository;
 
-    @Autowired
-    public ClienteService(ClienteRepository clienteRepository) {
-        this.clienteRepository = clienteRepository;
-    }
+        @Autowired
+        public ClienteService(ClienteRepository clienteRepository) {
+            this.clienteRepository = clienteRepository;
+        }
 
     public List<Cliente> obtenerTodos() {
         List<Cliente> clientes = clienteRepository.findAll();
